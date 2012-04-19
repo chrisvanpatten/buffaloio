@@ -1,0 +1,38 @@
+// Smaller than standard 960 (devices and browsers)
+@media only screen and (max-width: 959px) {
+	header {
+		background: none;
+	}
+
+	.description p {
+		line-height: 1.35;
+	}
+}
+
+// Tablet Portrait size to standard 960 (devices and browsers)
+@media handheld, only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+// All Mobile Sizes (devices and browser)
+@media handheld, only screen and (max-width: 767px) {
+	.description p {
+		padding: 0 0 20px;
+		border-right: 0;
+		border-bottom: 1px dotted #666;
+		text-align: left;
+	}
+}
+
+// Mobile Landscape Size to Tablet Portrait (devices and browsers)
+@media handheld, only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+// Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
+@media handheld, only screen and (max-width: 479px) {
+	#logo {
+		width: 300px;
+		height: auto;
+	}
+}

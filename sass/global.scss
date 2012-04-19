@@ -1,0 +1,124 @@
+@import "compass/reset";
+
+// Rach5 imports
+@import "includes/rach5/definitions";
+
+// Compass imports
+@import "rgbapng";
+@import "compass/css3";
+@import "compass/typography";
+
+// Your imports
+@import "includes/frameworks/skeleton";
+@import "includes/definitions";
+
+/*
+ *
+ * HERE BE DRAGONS...
+ *
+ */
+
+body {
+	font-family: 'Open Sans', $sansserif;
+	line-height: 1.5;
+}
+
+a img {
+	border: none;
+}
+
+.second.row {
+	padding-top: 20px;
+}
+
+
+/*
+ *
+ * Header
+ *
+ */
+
+header {
+	position: relative;
+	margin: 60px 0 55px;
+	background: image-url('logo-arrows.png') no-repeat;
+}
+
+#logo {
+	margin: 0 auto;
+	display: block;
+}
+
+
+/*
+ *
+ * Imports
+ *
+ */
+
+@import "buttons";
+
+@import "content";
+
+
+/*
+ *
+ * Description (slogan)
+ *
+ */
+
+.description {
+	p {
+		border-right: 1px dotted #666;
+		padding: 0 20px 0 0;
+		font: 700 italic 28px/1.65 'Alegreya', $serif;
+		color: #999;
+		text-align: right;
+	}
+}
+
+
+/*
+ *
+ * Intro/signup
+ *
+ */
+
+.intro {
+	p {
+		margin: 20px 0 0;
+		font-size: 24px;
+		line-height: 1.7;
+	}
+}
+
+
+/*
+ *
+ * Directions
+ *
+ */
+
+#map {
+	line-height: 1;
+}
+
+#larger-map-link {
+	float: right;
+	text-decoration: none;
+	color: #FFF;
+	background: #000;
+	padding: 3px 4px 5px;
+	font-size: 13px;
+	@include opacity(0.75);
+	margin: -2px 0 0;
+}
+
+/*
+ *
+ * Media Queries should always be loaded *last*
+ * for the good of the cascade.
+ *
+ */
+
+@import "includes/media-queries";

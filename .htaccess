@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_HOST} !^www\.buffaloio\.com [NC]
+RewriteRule ^(.*)$ [R=301,L]

@@ -1,0 +1,24 @@
+strong {
+	font-weight: 700;
+}
+
+h2 {
+	font: {
+		weight: 700;
+		size: 24px;
+	}
+	margin: 0 0 10px;
+}
+
+p {
+	margin: 0 0 20px;
+	font: {
+		size: 14px;
+	}
+}
+
+.bio {
+	span {
+		color: #666;
+	}
+}

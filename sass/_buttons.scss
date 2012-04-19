@@ -1,0 +1,44 @@
+.button {
+	display: block;
+	width: 282px;
+	height: 73px;
+	margin: 0 auto;
+	background-image: image-url('buttons.png');
+	font: {
+		size: 26px;
+		weight: 700;
+	}
+	line-height: 73px;
+	color: #FFF;
+	@include text-shadow();
+	text: {
+		align: center;
+		decoration: none;
+	}
+}
+
+.blue-btn {
+	@extend .button;
+	background-position: top left;
+
+	&:hover {
+		background-position: top center;
+	}
+
+	&:active {
+		background-position: top right;
+	}
+}
+
+.orange-btn {
+	@extend .button;
+	background-position: bottom left;
+
+	&:hover {
+		background-position: bottom center;
+	}
+
+	&:active {
+		background-position: bottom right;
+	}
+}
